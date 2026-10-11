@@ -1,0 +1,44 @@
+{
+ "n": 100000,
+ "sort_ms": 20.869903999937378,
+ "hash_build_ms": 19.70068299999639,
+ "hash_m": 200003,
+ "hash_load": 0.4999925001124983,
+ "hash_longest_probe": 30,
+ "sort_mem_mb": 0.8,
+ "hash_mem_mb": 4.39326,
+ "linear": {
+  "t_found": 3647.7274300000317,
+  "c_found": 50006.03666666667,
+  "w_found": 99862,
+  "t_miss": 6897.632620000043,
+  "c_miss": 100000.0,
+  "w_miss": 100000,
+  "best": 1
+ },
+ "binary": {
+  "t_found": 3.5478380000313336,
+  "c_found": 15.709,
+  "w_found": 17,
+  "t_miss": 3.6331349999727536,
+  "c_miss": 16.683,
+  "w_miss": 17,
+  "exact_c_found": 15.68946,
+  "best": 1
+ },
+ "hash": {
+  "t_found": 0.5876110000144763,
+  "c_found": 1.5,
+  "w_found": 11,
+  "t_miss": 0.6075689999534006,
+  "c_miss": 1.558,
+  "w_miss": 27,
+  "exact_c_found": 1.4981,
+  "best": 1
+ },
+ "queries": {
+  "linear": 300,
+  "binary": 1000,
+  "hash": 1000
+ }
+}

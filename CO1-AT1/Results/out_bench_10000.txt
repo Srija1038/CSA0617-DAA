@@ -1,0 +1,12 @@
+Reg No: 192525223 | Name: T. Srija | Seed: 5223 | 11-10-2026 16:53:54
+TASK 9 - Benchmark: Linear (iterative) | Binary (recursive) | Hash (linear probing)  n = 10,000
+==============================================================================
+Dataset size n = 10,000  (seed 5223; own reg no 192525223 = found, 192525224 = not found)
+Algorithm                   prep(ms)   us/found    us/miss   cmp(found)    cmp(miss)  best      worst
+Linear search                   0.00     235.33     457.71     5,001.32    10,000.00     1     10,000
+Binary search (recursive)       1.84       2.28       2.45        12.33        13.36     1         14
+Hash (linear probing)           2.20       0.36       0.37         1.53         1.49     1         21
+(hash table: m = 20,011 slots, load factor = 0.500, longest probe sequence = 21;
+ timings = mean per query; queries: linear 1000, binary/hash 1000)
+
+results saved to results/bench_10000.json

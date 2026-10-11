@@ -1,0 +1,11 @@
+Reg No: 192525223 | Name: T. Srija | Seed: 5223 | 11-10-2026 16:54:32
+TASK 8 - Correctness tests: Linear | Binary (recursive + iterative check) | Hash (linear probing)
+==============================================================================
+edge cases (empty list, single record)           -> ALL PASS
+n =     1,000 | found keys 26, not-found keys 6 | own reg no found: True | reg no+1 found: False | checks 128 -> ALL PASS
+n =    10,000 | found keys 26, not-found keys 6 | own reg no found: True | reg no+1 found: False | checks 128 -> ALL PASS
+n =   100,000 | found keys 26, not-found keys 6 | own reg no found: True | reg no+1 found: False | checks 128 -> ALL PASS
+n = 1,000,000 | found keys 26, not-found keys 6 | own reg no found: True | reg no+1 found: False | checks 128 -> ALL PASS
+==============================================================================
+TOTAL checks: 521 | passed: 521 | failed: 0
+RESULT: ALL ALGORITHMS CORRECT

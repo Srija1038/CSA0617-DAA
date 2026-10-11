@@ -1,0 +1,13 @@
+Reg No: 192525223 | Name: T. Srija | Seed: 5223 | 11-10-2026 16:54:38
+TASK 12 - Design challenge benchmark: 50,000 searches on 1,000,000 records, new records once per day
+==============================================================================
+Design                        prep(s)  50,000 searches(s)  per search(us)   searches/s  one day(s)
+Linear (projected, 100 meas.)     0.00             4134.52        82690.49           12      99,229
+Binary search (original)         0.40                0.56           11.17       89,557       13.80
+Hash (linear probing)            0.47                0.06            1.13      881,922        1.83
+
+daily update with k = 5,000 new records (merged result identical to full sort: True)
+  full re-sort of 1,005,000 records            : 0.433 s
+  sort new batch + heapq.merge (pure Python)    : 0.193 s
+  old run + new run concatenated, then .sort()  : 0.038 s   (Timsort merges the two runs in linear time)
+  rebuild of the hash table                     : 0.558 s
